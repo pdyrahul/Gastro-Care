@@ -1,0 +1,134 @@
+@charset "utf-8";
+/* CSS Document Rahul css Start here */
+:root{
+
+    /*****COLOR*****/
+    --color-primary:#92c850;
+    --color-text: #333;
+    --color-white: #fff;
+    --color-yellow:#f4ab01; 
+    --color-gray: #838383;
+    --color-lightgrey: #f7f6f6;   
+
+     /*****FONT*****/
+    --font_14: 14px;
+    --font_16: 16px;
+    --font_18: 18px;
+    --font_24: 24px;
+    --font_28: 28px;
+    --font_32: 32px;
+    --font_40: 40px;
+    --font_45: 45px;
+
+    /*****FONT WEIGHT*****/
+    --weight_100: 100;
+    --weight_300: 300;
+    --weight_400: 400;
+    --weight_500: 500;
+    --weight_700: 700;
+
+      /*****MARGIN SPACING*****/
+    --value_0   : 0px;
+    --value_2   : 2px;
+    --value_4   : 4px;
+    --value_5   : 5px;
+    --value_6   : 6px;
+    --value_8   : 8px;
+    --value_10  : 10px;
+    --value_12  : 12px;
+    --value_14  : 14px;
+    --value_15  : 15px;
+    --value_16  : 16px;
+    --value_17  : 17px;
+    --value_20  : 20px;
+    --value_25  : 25px;
+    --value_28  : 28px;
+    --value_30  : 30px;
+    --value_40  : 40px;
+    --value_45  : 45px;
+    --value_50  : 50px;
+    --value_-50 : -50px;
+    --value_60  : 60px;
+    --value_-70px  :  -70px;
+    --value_10_0: 10px 0;
+    --value_100 : 100px;
+
+}
+body{font-size: var(--font_18);line-height: var(--value_28);font-weight: var(--weight_500);}
+h1{font-size: var(--font_40);}
+h2{font-size: var(--font_28);}
+h3{font-size: var(--font_24);}
+h3{font-size: var(--font_18);}
+.topbar{ background: var(--color-primary); padding: var(--value_5) 0; color: var(--color-white);}
+.topbar a{ color: var(--color-white); text-decoration: none;}
+.hbr_left ul { margin-bottom: 0;}
+.hbr_left ul li { display: inline-block; margin-right: var(--value_15);}
+.hbr_left ul li i{margin-right: var(--value_4);}
+.hbr_right ul {margin-bottom: 0;text-align: right;}
+.hbr_right ul li { display: inline-block; margin-right: var(--value_15);}
+.hbr_right ul li:last-child{margin-right: 0;}
+header{ background:rgb(255 255 255 / 49%); padding:var(--value_15) 0;position: relative;}
+header.fixed-header {position: fixed;top: 0;right: 0;left: 0;background: #fff; z-index: 1000;}
+/**********CSS FOR MENU********/
+.menuWrapp{margin-left:auto;}
+.menuWrapp ul { margin: 0; padding: 0;}
+.menuWrapp ul li{display:inline-block;}
+.logoWrapp { max-width: 280px;}
+.logoWrapp img { width: 100%;}
+.menuWrapp ul li a { padding:var(--value_6) var(--value_15); display: block; color:var(--color-text); text-decoration: none;}
+.menuWrapp a:hover{ color:var(--color-primary);}
+.space_50{padding: var(--value_45)  0;}
+/*.space_50:nth-child(2n){background: var(--color-gray);}*/
+.heroBanner {background-image: url(../images/slider.jpg);width: 100%; padding: 200px 0; background-size: cover;background-position: right center; margin-top: var(--value_-70px);}
+.sliderText h1{text-transform:uppercase; font-weight: 800;}
+.sliderText h1 span { padding: var(--value_10) var(--value_15); background: var(--color-primary); color: var(--color-white); text-transform: uppercase; display: inline-block; margin-bottom: var(--value_15); font-size: var(--font_28); font-weight: 500;}
+/********CSS FOR OPD & APPOINTMENT*********/
+.handWrapp { max-width: 1000px; margin: 0 auto; background: url("../images/holdhand.jpg");background-size: cover; background-position: center center; width: 100%; color: #fff; position: relative; padding: var(--value_40) var(--value_15);}
+.handWrapp::before { position: absolute; top: 0; bottom: 0; left: 0; right: 0; background: rgb(0 0 0 / 78%); content: "";}
+.handWrapp::after { position: absolute; content: ""; border-top: 80px solid #92c850; left: 0; top: 0; border-right: 80px solid transparent;}
+.opdText {text-align: center;padding-right:var(--value_25);}
+.appointmentText { text-align: left; padding-left:var(--value_30);}
+.appointmentText h5{ text-align:center;}
+.appointmentText ul li{ display:inline;}
+.appointmentText ul li:first-child{margin-right:var(--value_15); padding-right:var(--value_15); border-right:1px solid #fff;}
+.appointmentText li a {text-decoration: none;color: #fff;font-size:var(--value_14);font-weight: normal;}
+.emrWrapp {padding-left:var(--value_50);}
+.emergencyCall{ padding: var(--value_10); background-color:var(--color-primary); position: relative;}
+.emergencyCall:before {position: absolute;content:"";border-top: 48px solid var(--color-primary);border-left: var(--value_50) solid transparent;top: 0;left:var(--value_-50);}
+/********** CSS FOR FOUNDER PIC & MASSAGE **********/
+.fndr_cmnt{padding-top: var(--value_50);}
+.fwrapp{padding-right: 80px;}
+.fwrapp img{ width:100%; margin-right: var(--value_60);}
+.fmsgwrapp h4{ color:var(--color-primary); font-size: 800;}
+.fmsgwrapp p{padding-top:var(--value_15);color: var(--color-gray); font-size:var(--value_17); text-align: justify;}
+.plusIcon{position: relative; width: var(--value_16); height:  var(--value_16); background: #f4ab01; line-height: var(--value_16); text-align: justify; font-weight: 700; color: #fff; transform: rotate(45deg); margin: var(--value_25) 0px;}
+.plusIcon span{ display:block; color:var(--color-white); position:absolute; transform:rotate(-45deg);}
+.plusIcon span::before{ width: 50px;height: 2px;background: #f4ab01;content: "";position: absolute;left: 30px;top: 7px;}
+/***********CONDITION TREATED CSS START HERE**************/ 
+.conditionTreated{background-image:url("../images/condition.jpg"); background-size: cover; background-position: center; background-repeat: no-repeat;}
+.conditionlist li{ display:block; margin-top:15px; border:1px solid var(--color-primary); background-color: var(--color-white);padding:var(--value_8); border-radius: var(--value_4);}
+.conditionlist li a{ text-decoration: none; color:#000; display:flex; justify-content: space-between;}
+.conditionlist .fa {display:inline-block; color:var(--color-primary); font-size: var(--value_20); padding:6px 10px 2px 0px;}
+/**************Crousel CSS*************/
+
+.testimonialwrapp{ background-color: var(--color-lightgrey); position:relative;}
+.testimonialwrapp p{padding:var(--value_50) 0px 10px 100px; font-size:var(--value_20);}
+.testimonialwrapp h3{ display:block; text-align: right; padding: 0px 100px 20px  0px;  font-size:var(--value_20);}
+.testimonialwrapp::before{  position: absolute; content: ""; border-top: 80px solid #92c850; left: 0; top: 0; border-right: 80px solid transparent;}
+
+
+/******************footer css start here************/
+.f_logo_p p{ margin-top:var(--value_20)}
+footer{ background-image: url("../images/foo-banner.jpg");width:100%; background-size: cover; background-position:center;}
+.linkwrapp a {text-decoration: none; color:var(--color-white);}
+.linkwrapp li{ margin-bottom: 10px;}
+.footerwrapp{padding-top:var(--value_100); color:var(--color-white); font-size: var(--value_17);}
+.footerwrapp h3{ font-size:var(--value_25);}
+/************.footer::before { position: relative; top: 0; bottom: 0; left: 0; right: 0; background: rgb(0 0 0 / 78%); content: "";}*****/
+.ftr_styl{ margin-top:var(--value_15);}
+.ftr_fa{  height:30px; width:30px;padding: 3px; border:1px solid white; margin-right:6px; text-align: center;}
+
+.copyright{text-align: center; padding:var(--value_50) 0;}
+.copyright p{ font-size: var(--font_14);}
+.copyright  span{ font-size: var(--font_18); font-weight: 500 !important;}
+.contactwrapp a{text-decoration: none; color:var(--color-white);}
