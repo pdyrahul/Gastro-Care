@@ -1,6 +1,19 @@
 @charset "utf-8";
 /* CSS Document */
 @media (max-width: 767px){
+    h1{
+        font-size: 24px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    h3,h4{
+        font-size: 18px !important;
+    }
+   
+    body{
+        font-size: 15px !important;
+    }
 	header {
     position: relative;
     padding: 5px 10px;
@@ -94,5 +107,109 @@ footer {
     text-align: center;
     margin-bottom: 30px;
 }
+.logo_nav_wrapp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header{
+    background: white;
+    padding: 20px 10px 10px;
+    box-shadow: 0px 5px 13px 2px rgb(165 160 160 / 18%);
+}
+.topbar{
+    display: none;
+}
+.logoWrapp{
+    width:40%;
+}
+.logoWrapp img{
+    width:100%;
+}
+nav{
+    display: none;
+}
+.md-iconList{
+    display: block;
+    width:60%;
 
+}
+.md-iconList ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap:10px;
+    padding-left: 20px;
+    margin:0;
+
+
+}
+.md-iconList ul li{
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.md-iconList ul li a{
+    color:#92c850;
+}
+.bar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:5px;
+    width:10px;
+    color: skyblue;
+    gap:5px;
+}
+.span-top{
+    height: 2px;
+    width: 20px;
+    background-color: #92c850;
+    border-radius: 100vw;
+}
+.span-middle{
+    height: 2px;
+    width: 10px;
+    border-radius: 100dvw;
+    background-color:#92c850;
+}
+.span-bottom{
+    height: 2px;
+    width: 20px;
+    border-radius: 100dvw;
+    background-color: #92c850;
+}
+.opdText{
+    padding:0;
+}
+.emergencyCall {
+    padding: var(--value_2);
+}
+.handWrapp::after {
+    position: absolute;
+    content: "";
+    border-top: 7px solid #92c850;
+    left: 0;
+    top: 0;
+    right: 0;
+    border-right: 0px solid transparent;
+    border-left:0px solid transparent;
+}
+.footerwrapp{
+    padding-top:var(--value_20)
+}
+.heroBanner{
+    padding:50px 0;
+    margin:0;
+}
+.sliderText h1{
+    font-size: larger;
+}
+.footer{
+    font-size: 12px !important;
+}
 }

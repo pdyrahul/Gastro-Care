@@ -71,6 +71,8 @@ header{ background:rgb(255 255 255 / 49%); padding:var(--value_15) 0;position: r
 header.fixed-header {position: fixed;top: 0;right: 0;left: 0;background: #fff; z-index: 1000;}
 /**********CSS FOR MENU********/
 .menuWrapp{margin-left:auto;}
+.logo_nav_wrapp{ width:100%; display:flex; justify-content: space-between; align-items: center;}
+.md-iconList{display: none;}
 .menuWrapp ul { margin: 0; padding: 0;}
 .menuWrapp ul li{display:inline-block;}
 .logoWrapp { max-width: 280px;}
@@ -101,7 +103,7 @@ header.fixed-header {position: fixed;top: 0;right: 0;left: 0;background: #fff; z
 .fwrapp img{ width:100%; margin-right: var(--value_60);}
 .fmsgwrapp h4{ color:var(--color-primary); font-size: 800;}
 .fmsgwrapp p{padding-top:var(--value_15);color: var(--color-gray); font-size:var(--value_17); text-align: justify;}
-.plusIcon{position: relative; width: var(--value_16); height:  var(--value_16); background: #f4ab01; line-height: var(--value_16); text-align: justify; font-weight: 700; color: #fff; transform: rotate(45deg); margin: var(--value_25) 0px;}
+.plusIcon{position: relative; width: var(--value_16); height:  var(--value_16); background: #f4ab01; line-height: var(--value_12); text-align: justify; font-weight: 700; color: #fff; transform: rotate(45deg); margin: var(--value_25) 0px;}
 .plusIcon span{ display:block; color:var(--color-white); position:absolute; transform:rotate(-45deg);}
 .plusIcon span::before{ width: 50px;height: 2px;background: #f4ab01;content: "";position: absolute;left: 30px;top: 7px;}
 /***********CONDITION TREATED CSS START HERE**************/ 
